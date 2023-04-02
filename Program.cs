@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Device.Location;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 //using System.Device.Location;
 
 
@@ -21,7 +16,7 @@ namespace Cansat_HMI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Interface());
-            
+
         }
 
     }

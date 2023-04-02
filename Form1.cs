@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Device.Location;
-using System.Diagnostics.SymbolStore;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -21,7 +13,7 @@ namespace Cansat_HMI
             InitializeComponent();
             CustomDesign();
             OpenChildFrom(new Inicio());
-            
+
 
 
         }
@@ -124,10 +116,10 @@ namespace Cansat_HMI
 
         private void OpenChildFrom(Form childForm)
         {
-            if(activeForm != null)
+            if (activeForm != null)
             {
                 activeForm.Close();
-               
+
             }
             activeForm = childForm;
             childForm.TopLevel = false;

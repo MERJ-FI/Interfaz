@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using OpenTK.Graphics.OpenGL4;
+﻿using OpenTK.Graphics.OpenGL4;
 
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
@@ -13,7 +10,7 @@ namespace Cansat_HMI
     {
         int Handle;
 
-        public Texture (string imagePath)
+        public Texture(string imagePath)
         {
             Handle = GL.GenTexture();
             Use();
@@ -30,7 +27,7 @@ namespace Cansat_HMI
 
             GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, image.Width, image.Height, 0, PixelFormat.Rgba, PixelType.UnsignedByte, pixels);
 
-           
+
         }
 
         public void Use()

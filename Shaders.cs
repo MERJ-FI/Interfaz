@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using OpenTK.Graphics.ES30;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenTK.Graphics.ES30;
 
 namespace Cansat_HMI
 {

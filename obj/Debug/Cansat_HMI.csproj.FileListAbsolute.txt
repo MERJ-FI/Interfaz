@@ -71,7 +71,6 @@ C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Security.Principal.Windows.dll
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Text.Encoding.CodePages.dll
-C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\Tao.FreeGlut.dll
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\EntityFramework.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\Newtonsoft.Json.xml
@@ -90,7 +89,6 @@ C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\mgnar\Desktop\CANSAT\Interfaz\bin\Debug\Tao.FreeGlut.xml
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\obj\Debug\Cansat_HMI.csproj.AssemblyReference.cache
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\obj\Debug\Cansat_HMI.csproj.SuggestedBindingRedirects.cache
 C:\Users\mgnar\Desktop\CANSAT\Interfaz\obj\Debug\Cansat_HMI.CargaSecundaria.resources
