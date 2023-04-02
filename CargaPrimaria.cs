@@ -2,6 +2,7 @@
 using OpenTK;
 using OpenTK.Graphics.ES30;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Timers;
@@ -13,49 +14,62 @@ namespace Cansat_HMI
     public partial class CargaPrimaria : Form
     {
         #region Configurables
+        const float alturaR = 0.9f;
+        //Cara trasera
+        public static readonly float[] colorC1 = new float[] { 1.0f, 0.0f, 0.0f};
+        //Cara frontal o principal
+        public static readonly float[] colorC2 = new float[] { 0.0f, 1.0f, 0.0f };
+        //Caras laterales
+        public static readonly float[] colorC3 = new float[] { 0.0f, 0.0f, 1.0f };
+        public static readonly float[] colorC4 = new float[] { 0.0f, 0.0f, 1.0f };
+        public static readonly float[] colorC5 = new float[] { 0.0f, 0.0f, 1.0f };
+        public static readonly float[] colorC6 = new float[] { 0.0f, 0.0f, 1.0f };
+
+        
+
         // Vertices de modelo 3D
         float[,] vertices = {
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            {-0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f},
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
+            {-0.5f, -0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]}, 
+            { 0.5f, -0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]}, 
+            { 0.5f,  0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]}, 
+            { 0.5f,  0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]}, 
+            {-0.5f,  0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]},
+            {-0.5f, -0.5f, -alturaR, colorC1[0], colorC1[1], colorC1[2]},
+            
+            {-0.5f, -0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]}, 
+            { 0.5f, -0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]}, 
+            { 0.5f,  0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]}, 
+            { 0.5f,  0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]}, 
+            {-0.5f,  0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]},
+            {-0.5f, -0.5f,  alturaR, colorC2[0], colorC2[1], colorC2[2]}, 
 
-            {-0.5f, -0.5f,  0.5f ,0.0f, 0.8f, 0.72f}, 
-            { 0.5f, -0.5f,  0.5f ,0.0f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f,  0.5f ,0.0f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f,  0.5f ,0.0f, 0.8f, 0.72f}, 
-            {-0.5f,  0.5f,  0.5f ,0.0f, 0.8f, 0.72f},
-            {-0.5f, -0.5f,  0.5f ,0.0f, 0.8f, 0.72f}, 
+            {-0.5f,  0.5f,  alturaR, colorC3[0], colorC3[1], colorC3[2]}, 
+            {-0.5f,  0.5f, -alturaR, colorC3[0], colorC3[1], colorC3[2]}, 
+            {-0.5f, -0.5f, -alturaR, colorC3[0], colorC3[1], colorC3[2]}, 
+            {-0.5f, -0.5f, -alturaR, colorC3[0], colorC3[1], colorC3[2]}, 
+            {-0.5f, -0.5f,  alturaR, colorC3[0], colorC3[1], colorC3[2]},
+            {-0.5f,  0.5f,  alturaR, colorC3[0], colorC3[1], colorC3[2]}, 
 
-            {-0.5f,  0.5f,  0.5f ,0.6f, 0.0f, 0.72f}, 
-            {-0.5f,  0.5f, -0.5f ,0.6f, 0.0f, 0.72f}, 
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.0f, 0.72f}, 
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.0f, 0.72f}, 
-            {-0.5f, -0.5f,  0.5f ,0.6f, 0.0f, 0.72f},
-            {-0.5f,  0.5f,  0.5f ,0.6f, 0.0f, 0.72f}, 
+             {0.5f,  0.5f,  alturaR, colorC4[0], colorC4[1], colorC4[2]}, 
+             {0.5f,  0.5f, -alturaR, colorC4[0], colorC4[1], colorC4[2]}, 
+             {0.5f, -0.5f, -alturaR, colorC4[0], colorC4[1], colorC4[2]}, 
+             {0.5f, -0.5f, -alturaR, colorC4[0], colorC4[1], colorC4[2]}, 
+             {0.5f, -0.5f,  alturaR, colorC4[0], colorC4[1], colorC4[2]},
+             {0.5f,  0.5f,  alturaR, colorC4[0], colorC4[1], colorC4[2]},
 
-             {0.5f,  0.5f,  0.5f ,0.6f, 0.8f, 0.0f}, 
-             {0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.0f}, 
-             {0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.0f}, 
-             {0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.0f}, 
-             {0.5f, -0.5f,  0.5f ,0.6f, 0.8f, 0.0f},
-             {0.5f,  0.5f,  0.5f ,0.6f, 0.8f, 0.0f},
+            {-0.5f, -0.5f, -alturaR, colorC5[0], colorC5[1], colorC5[2]}, 
+            { 0.5f, -0.5f, -alturaR, colorC5[0], colorC5[1], colorC5[2]}, 
+            { 0.5f, -0.5f,  alturaR, colorC5[0], colorC5[1], colorC5[2]}, 
+            { 0.5f, -0.5f,  alturaR, colorC5[0], colorC5[1], colorC5[2]}, 
+            {-0.5f, -0.5f,  alturaR, colorC5[0], colorC5[1], colorC5[2]}, 
+            {-0.5f, -0.5f, -alturaR, colorC5[0], colorC5[1], colorC5[2]},
 
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f, -0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f, -0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            {-0.5f, -0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            {-0.5f, -0.5f, -0.5f ,0.6f, 0.8f, 0.72f},
-
-            {-0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            { 0.5f,  0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            {-0.5f,  0.5f,  0.5f ,0.6f, 0.8f, 0.72f}, 
-            {-0.5f,  0.5f, -0.5f ,0.6f, 0.8f, 0.72f} 
+            {-0.5f,  0.5f, -alturaR, colorC6[0], colorC6[1], colorC6[2]}, 
+            { 0.5f,  0.5f, -alturaR, colorC6[0], colorC6[1], colorC6[2]}, 
+            { 0.5f,  0.5f,  alturaR, colorC6[0], colorC6[1], colorC6[2]}, 
+            { 0.5f,  0.5f,  alturaR, colorC6[0], colorC6[1], colorC6[2]}, 
+            {-0.5f,  0.5f,  alturaR, colorC6[0], colorC6[1], colorC6[2]}, 
+            {-0.5f,  0.5f, -alturaR, colorC6[0], colorC6[1], colorC6[2]} 
         };
 
 
@@ -74,7 +88,8 @@ namespace Cansat_HMI
         double timeValue = 0.0;
         Camera camera;
         bool Lapse = false;
-        Matrix4 model;
+        Matrix4 model, rotX, rotY, rotZ;
+        
 
         public CargaPrimaria()
         {
@@ -95,16 +110,14 @@ namespace Cansat_HMI
                 // Se suma el tiempo 16 ms.
                 timeValue += 0.16;
 
+                rotX = Matrix4.CreateRotationX((float)MathHelper.DegreesToRadians(timeValue * 10));
+                rotY = Matrix4.CreateRotationY((float)MathHelper.DegreesToRadians(timeValue * 5));
+                rotZ = Matrix4.CreateRotationZ((float)MathHelper.DegreesToRadians(timeValue * 2.5));
 
-                //model = Matrix4.CreateRotationY((float)MathHelper.DegreesToRadians(timeValue * 10));
-
-                model = Matrix4.CreateFromAxisAngle(new Vector3(0.5f, 0.5f, 0.5f), (float)timeValue * 1);
+                model = rotX * rotY * rotZ;
 
                 GL.UniformMatrix4(GL.GetUniformLocation(shader.Handle, "model"), true, ref model);
 
-                
-
-                //GL.DrawElements(PrimitiveType.Triangles, indices.Length, DrawElementsType.UnsignedInt, (IntPtr)0);
                 GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
 
                 glControlPrimary.SwapBuffers();
@@ -131,15 +144,18 @@ namespace Cansat_HMI
         {
             // Usar contexto actual.
             glControlPrimary.MakeCurrent();
+            
 
             // Color de fondo.
-            Color backGroundColor = Color.WhiteSmoke;
+            Color backGroundColor = Color.White;
             GL.Enable(EnableCap.DepthTest);
 
             // Se colorea el fondo.
             GL.ClearColor((float)backGroundColor.R / 255.0f, (float)backGroundColor.G / 255.0f,
                 (float)backGroundColor.B / 255.0f, (float)backGroundColor.A / 255.0f);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+
+           
 
             // Se genera un buffer vertex y se combina con el buffer objetivo
             VertexBufferObject = GL.GenBuffer();
@@ -163,17 +179,17 @@ namespace Cansat_HMI
             shader.Use();
 
             //Rotación inicial en X.
-            Matrix4 model = Matrix4.CreateRotationX(MathHelper.DegreesToRadians(-55.0f));
+            Matrix4 model = Matrix4.CreateRotationX(MathHelper.DegreesToRadians(0f));
             
 
-            camera = new Camera(new Vector3(0f,0f,3f), glControlPrimary.Width / (float)glControlPrimary.Height);
+            camera = new Camera(new Vector3(0f,0f,2.5f), glControlPrimary.Width / (float)glControlPrimary.Height);
 
             const float anguloCamara = 0f;// * (3.14159f/180);
 
             camera.Yaw -= 10f;
             camera.Pitch += anguloCamara;
-            camera.Position += Vector3.UnitY * 0.35f;
-            camera.Position += Vector3.UnitX * 0.85f;
+            camera.Position += Vector3.UnitY * 0.20f;
+            camera.Position -= Vector3.UnitX * 0.05f;
 
             Matrix4 cameraView = camera.GetViewMatrix();
             Matrix4 cameraProjection = camera.GetProjectionMatrix();
@@ -191,7 +207,7 @@ namespace Cansat_HMI
             GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
             glControlPrimary.SwapBuffers();
             t.Start();
-
+            
         }
 
         private void CargaPrimaria_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)

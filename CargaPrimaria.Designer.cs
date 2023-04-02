@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CargaPrimaria));
             this.titleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.graphicPanel = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.glControlPrimary = new OpenTK.GLControl();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,18 +65,30 @@
             // 
             // graphicPanel
             // 
+            this.graphicPanel.Controls.Add(this.panel4);
             this.graphicPanel.Controls.Add(this.glControlPrimary);
             this.graphicPanel.Location = new System.Drawing.Point(16, 133);
             this.graphicPanel.Name = "graphicPanel";
-            this.graphicPanel.Size = new System.Drawing.Size(200, 200);
+            this.graphicPanel.Size = new System.Drawing.Size(160, 160);
             this.graphicPanel.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(60, 60);
+            this.panel4.TabIndex = 1;
             // 
             // glControlPrimary
             // 
             this.glControlPrimary.BackColor = System.Drawing.Color.Black;
             this.glControlPrimary.Location = new System.Drawing.Point(3, 3);
             this.glControlPrimary.Name = "glControlPrimary";
-            this.glControlPrimary.Size = new System.Drawing.Size(194, 194);
+            this.glControlPrimary.Size = new System.Drawing.Size(154, 154);
             this.glControlPrimary.TabIndex = 0;
             this.glControlPrimary.VSync = false;
             this.glControlPrimary.Load += new System.EventHandler(this.glControlPrimary_Load);
@@ -171,5 +185,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         public OpenTK.GLControl glControlPrimary;
+        private System.Windows.Forms.Panel panel4;
     }
 }
