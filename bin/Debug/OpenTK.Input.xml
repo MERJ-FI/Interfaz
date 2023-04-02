@@ -1,0 +1,709 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTK.Input</name>
+    </assembly>
+    <members>
+        <member name="T:OpenTK.Input.Hid.HidConsumerUsage">
+            <summary>
+            Describes usages for the <see cref="F:OpenTK.Input.Hid.HidPage.Consumer"/> page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidConsumerUsage.ConsumerControl">
+            <summary>
+            General consumer control device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidConsumerUsage.ACPan">
+            <summary>
+            Set the horizontal offset of the display in the document.
+            </summary>
+        </member>
+        <member name="T:OpenTK.Input.Hid.HidGenericDesktopUsage">
+            <summary>
+            Describes usages for the <see cref="F:OpenTK.Input.Hid.HidPage.GenericDesktop"/> page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Pointer">
+            <summary>
+            A collection of axes that generates a value to direct, indicate, or point
+            user intentions to an application.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Mouse">
+            <summary>
+            A hand-held, button-activated input device that when rolled along a flat surface,
+            directs an indicator to move correspondingly about a computer screen, allowing the
+            operator to move the indicator freely in select operations or to manipulate text or graphics.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Joystick">
+            <summary>
+            A manual control or cursor device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.GamePad">
+            <summary>
+            A manual control or cursor device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Keyboard">
+            <summary>
+            The primary computer input device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Keypad">
+            <summary>
+            Any keyboard configuration that does not meet the minimum requirements of the Boot Keyboard.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.MultiAxisController">
+            <summary>
+            An input device used to orient eyepoints and or objects in 3 dimensional space.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.X">
+            <summary>
+            A linear translation in the X direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Y">
+            <summary>
+            A linear translation in the Y direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Z">
+            <summary>
+            A linear translation in the Z direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.RotationX">
+            <summary>
+            A rotation about the X axis. Angular position report values follow the righthand rule.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.RotationY">
+            <summary>
+            A rotation about the Y axis. Angular position report values follow the righthand rule.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.RotationZ">
+            <summary>
+            A rotation about the Z axis. Angular position report values follow the righthand rule.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Slider">
+            <summary>
+            A linear control for generating a variable value, normally in the form of a thumb slide in a slot.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Dial">
+            <summary>
+            A rotary control for generating a variable value,
+            normally in the form of a knob spun by the index finger and thumb.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Wheel">
+            <summary>
+            A rotary control for generating a variable value, normally rolled, unlike a dial.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Hatswitch">
+            <summary>
+            A specialized mechanical configuration of switches generating a variable value with a null state.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.CountedBuffer">
+            <summary>
+            Used with buffered –byte data to indicate the number of valid bytes in the buffered-byte field.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.ByteCount">
+            <summary>
+            Defines a report field that indicates the number of meaningful data bytes
+            in an associated buffered-byte field.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.MotionWakeup">
+            <summary>
+            Enables the generation of a USB remote wakeup when the device detects motion.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Start">
+            <summary>
+            Session start button.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.Select">
+            <summary>
+            Application option select button.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorX">
+            <summary>
+            A vector in the X direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorY">
+            <summary>
+            A vector in the Y direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorZ">
+            <summary>
+            A vector in the Z direction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorXBodyRelative">
+            <summary>
+            A vector in the X direction relative to the body of an object.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorYBodyRelative">
+            <summary>
+            A vector in the Y direction relative to the body of an object.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorZBodyRelative">
+            <summary>
+            A vector in the Z direction relative to the body of an object.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.VectorNonOriented">
+            <summary>
+            A non oriented vector or value.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemControl">
+            <summary>
+            An application-level collection that contains system-software-specific usages.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemPowerDown">
+            <summary>
+            Asserted when the intended action is to initiate system-wide power down now from
+            Full Power or Sleep states.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemSleep">
+            <summary>
+            Asserted when the intended action is to initiate system-wide low power mode now.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemWakeUp">
+            <summary>
+            Asserted when the intended action is to initiate system-wide Full Power state now.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemContextMenu">
+            <summary>
+            Evokes a context-sensitive menu.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMainMenu">
+            <summary>
+            Evokes the OS main-level selection menu.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemAppMenu">
+            <summary>
+            Displays an application-specific menu.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuHelp">
+            <summary>
+            Displays the help menu.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuExit">
+            <summary>
+            Exits a menu.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuSelect">
+            <summary>
+            Selects a menu item.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuRight">
+            <summary>
+            Menu select right.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuLeft">
+            <summary>
+            Menu select left.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuUp">
+            <summary>
+            Menu select up.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.SystemMenuDown">
+            <summary>
+            Menu select down.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.DPadUp">
+            <summary>
+            Indicates that top of a Direction Pad is pressed.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.DPadDown">
+            <summary>
+            Indicates that bottom of a Direction Pad is pressed
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.DPadRight">
+            <summary>
+            Indicates that right side of a Direction Pad is pressed
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidGenericDesktopUsage.DPadLeft">
+            <summary>
+            Indicates that left side of a Direction Pad is pressed
+            </summary>
+        </member>
+        <member name="T:OpenTK.Input.Hid.HidHelper">
+            <summary>
+            Static class that provides helper functions for consuming HID input.
+            </summary>
+        </member>
+        <member name="M:OpenTK.Input.Hid.HidHelper.TranslateJoystickAxis(OpenTK.Input.Hid.HidPage,System.Int32)">
+            <summary>
+            Translates a generic HID usage value to a specific joystick axis for the specified <see cref="T:OpenTK.Input.Hid.HidPage"/>.
+            </summary>
+            <param name="page">The HID usage page.</param>
+            <param name="usage">The generic usage value.</param>
+            <returns>An <see cref="T:System.Int32"/> that maps the HID usage value to a joystick axis.</returns>
+        </member>
+        <member name="T:OpenTK.Input.Hid.HidPage">
+            <summary>
+            The usage page identifies both the intended usage and the measured values of a human interface device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Undefined">
+            <summary>
+            This page describes an undefined usage.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.GenericDesktop">
+            <summary>
+            This page describes generic desktop controls.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Simulation">
+            <summary>
+            This page provides detailed descriptions of the usages employed by simulation devices.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.VR">
+            <summary>
+            Describes virtual reality controls. The usages depend on designators to identify the individual controls.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Sport">
+            <summary>
+            This page describes sport controls.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Game">
+            <summary>
+            This page describes game controls.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.GenericDevice">
+            <summary>
+            This page provides usage definitions for controls that can be on any type of device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.KeyboardOrKeypad">
+            <summary>
+            This page is for key codes to be used in implementing a USB keyboard.
+            </summary>
+            <remarks>
+            The usage type of all key codes is Selectors (Sel), except for the modifier keys 'Keyboard Left Control'
+            (0x224) to 'Keyboard Right GUI' (0x231) which are Dynamic Flags (DV).
+            </remarks>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.LEDs">
+            <summary>
+            This page describes an LED or indicator that is implemented as an On/Off control (OOC)
+            using the "Single button toggle" mode,
+            where a value of 1 will turn on the indicator, and a value of 0 will turn it off.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Button">
+            <summary>
+            This page describes a set of buttons which can be defined as Sel, OOC, MC or OSC depending on
+            the context of their declaration.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Ordinal">
+            <summary>
+            This page allows multiple instances of a control or sets of controls to be declared without
+            requiring indiviual enumeration in the native usage page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Telephony">
+            <summary>
+            This page defines the keytop and control usages for telephony devices.
+            </summary>
+            <remarks>
+            Note that in many cases usage definitions are intentionally vague, since it is assumed that
+            the controls are interpreted by the telephone software application.
+            </remarks>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Consumer">
+            <summary>
+            This page describes application-specific controls.
+            They only affect a specific device, not the system as a whole.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Digitizer">
+            <summary>
+            This section provides detailed descriptions of the usages employed by Digitizer Devices.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.PID">
+            <summary>
+            Describes force feedback and related devices.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Unicode">
+            <summary>
+            The Unicode page directly maps to the two-octet form defined in the Unicode Standard.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.AlphanumericDisplay">
+            <summary>
+            The Alphanumeric display page is intended for use by simple alphanumeric
+            displays that are used on consumer devices.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.MedicalInstruments">
+            <summary>
+            This page provides usage definitions for medical instruments.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.PowerDevice">
+            <summary>
+            Power device page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.BatterySystem">
+            <summary>
+            Battery system page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.BarCodeScanner">
+            <summary>
+            This page describes the USB Device Class definition for a bar code scanner ("Point of Sale" device).
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Scale">
+            <summary>
+            This page describes the USB Device Class definition for a scale ("Point of Sale" device).
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.MagneticStripeReader">
+            <summary>
+            This page describes the USB Device Class definition for a magnetic stripe reading device
+            ("Point of Sale" device).
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.CameraControl">
+            <summary>
+            This page describes the USB Device Class definition for "Image Class Devices".
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.Arcade">
+            <summary>
+            This page describes the OAAF definitions for arcade and coinop related devices.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidPage.VendorDefinedStart">
+            <summary>
+            Marks the beginning of vendor-defined usage pages.
+            </summary>
+        </member>
+        <member name="T:OpenTK.Input.Hid.HidSimulationUsage">
+            <summary>
+            Describes usages for the <see cref="F:OpenTK.Input.Hid.HidPage.Simulation"/> page.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlightSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses the
+            standard controls found on an airplane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.AutomobileSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses the
+            standard controls found in an automobile or truck.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.TankSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses
+            standard controls found in a tank or a treaded vehicle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.SpaceshipSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses
+            standard controls found on a spaceship.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.SubmarineSimulationDevice">
+            <summary>
+            Allows a device to be generally classified as one that uses the standard controls of a submarine.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.SailingSimulationDevice">
+            <summary>
+            Allows a device to be generally classified as one that uses the standard controls of a sailboat.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.MotorcycleSimulationDevice">
+            <summary>
+            Allows a device to be generally classified as one that uses the standard controls of a motorcycle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.SportsSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses
+            standard controls found on a sports simulation device.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.AirplaneSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses
+            standard controls found on an airplane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.HelicopterSimulationDevice">
+            <summary>
+            This usage definition allows a device to be generally classified as one that uses
+            standard controls found on a helicopter.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.MagicCarpetSimulationDevice">
+            <summary>
+            Allows a device to be generally classified as one that uses the standard control of a magic carpet.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.BicycleSimulationDevice">
+            <summary>
+            Allows a device to be generally classified as one that uses the standard controls of a bicycle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlightControlStick">
+            <summary>
+            A Flight Control Stick controls the Pitch and Roll of an airplane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlightStick">
+            <summary>
+            A Flight Stick defines a class of device commonly used for flight simulator games.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.CyclicControl">
+            <summary>
+            This control is specifically for a helicopter.<para/>
+            A cyclic control is a stick between the pilot’s legs that moves in two axes.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.CyclicTrim">
+            <summary>
+            This control is specifically for a helicopter.<para/>
+            Cyclic Trim allows fine adjustment of the cyclic position in two dimensions.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlightYoke">
+            <summary>
+            A flight yoke (also called a control wheel) controls the pitch and roll of an airplane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.TrackControl">
+            <summary>
+            A device for controlling the direction and velocity of a vehicle that is driven by tracks.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Aileron">
+            <summary>
+            An aileron is one of two movable flaps on the wings of an airplane that can be used
+            to control the plane’s rolling and banking movements.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.AileronTrim">
+            <summary>
+            Allows fine adjustment of the Aileron position.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.AntiTorqueControl">
+            <summary>
+            This control mechanically behaves the same as rudder pedals.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.AutopilotEnable">
+            <summary>
+            This control enables or disables an airplane’s autopilot.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.ChaffRelease">
+            <summary>
+            Chaff is used to reflect electromagnetic energy as a radar countermeasure.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.CollectiveControl">
+            <summary>
+            This control is specifically for a helicopter.
+            It controls the vertical acceleration or lift of the helicopter.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.DiveBrake">
+            <summary>
+            A flap that can be extended on an aircraft to increase drag and reduce the speed of descent.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.ElectronicCountermeasures">
+            <summary>
+            A pushbutton that enables electronic countermeasures.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Elevator">
+            <summary>
+            A movable control surface, usually attached to the horizontal stabilizer of an aircraft,
+            that is used to produce motion up or down.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.ElevatorTrim">
+            <summary>
+            Elevator Trim allows fine adjustment of the Elevator position.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Rudder">
+            <summary>
+            The zero position is centered, positive values turn right, and negative values turn left.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Throttle">
+            <summary>
+            A valve that regulates the flow of a fluid, such as the valve in an internal-combustion engine
+            that controls the amount of vaporized fuel entering the cylinders.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlightCommunications">
+            <summary>
+            Typically this is a two-position pushbutton where the first position enables communications with the
+            crew and the second position enables the transmitter for communication external to the plane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FlareRelease">
+            <summary>
+            A flare is a device that produces a bright light for signaling, illumination, identification,
+            or heat for infrared missile countermeasures.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.LandingGear">
+            <summary>
+            A control for raising or lowering an airplane’s landing gear.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.ToeBrake">
+            <summary>
+            A device for slowing or stopping the motion of an airplane when it is on the ground.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Trigger">
+            <summary>
+            A lever pressed by the finger to release or activate a mechanism, typically used to discharge a firearm.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.WeaponsArm">
+            <summary>
+            This device is normally a covered toggle switch that must be selected to enable the weapons system.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.WeaponsSelect">
+            <summary>
+            This device can either be a pushbutton that steps through the available weapons or
+            a radio button that selects them individually.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.WingFlaps">
+            <summary>
+            Wing flap controls are usually powered either hydraulically or by electric motors,
+            and are used for low-speed control of an airplane.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Accelerator">
+            <summary>
+            A device, especially the gas pedal of a motor vehicle, for increasing speed.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Brake">
+            <summary>
+            A device for slowing or stopping motion, as of a vehicle, especially by contact friction.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Clutch">
+            <summary>
+            A device for disengaging the transmission of a vehicle to allow shifting of gears.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Shifter">
+            <summary>
+            A device for shifting gears in a vehicle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Steering">
+            <summary>
+            A steering wheel is a single degree-of-freedom device that rotates about an axis.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.TurretDirection">
+            <summary>
+            This control determines the right-to-left positioning of the tank turret.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.BarrelElevation">
+            <summary>
+            This control determines the elevation of the gun barrel in a turret.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.DivePlane">
+            <summary>
+            Dive planes control the vertical ascent or descent of the submarine under power.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.Ballast">
+            <summary>
+            Ballast controls the vertical ascent or descent of the submarine.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.BicycleCrank">
+            <summary>
+            A foot-operated assembly of pedals attached to a crank that is used for powering a bicycle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.HandleBars">
+            <summary>
+            A steering control, held in both hands, for a motorcycle or bicycle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.FrontBrake">
+            <summary>
+            Engages the front brake of the motorcycle to slow the vehicle.
+            </summary>
+        </member>
+        <member name="F:OpenTK.Input.Hid.HidSimulationUsage.RearBrake">
+            <summary>
+            Engages the rear brake of the motorcycle to slow the vehicle.
+            </summary>
+        </member>
+    </members>
+</doc>
